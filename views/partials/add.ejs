@@ -1,0 +1,52 @@
+<!-- The modal HTML structure with a form -->
+<div class="modal fade" id="addTaskModal" tabindex="-1" aria-labelledby="addTaskLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="addTaskLabel">Add Task</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <!-- Form inside the modal -->
+              <form id="addTaskForm" action="/store" method="post">
+                  <!-- Input field for Title -->
+                  <div class="mb-3">
+                      <label for="title" class="form-label">Title</label>
+                      <input type="text" class="form-control" id="title" name="title" required>
+                  </div>
+
+                  <!-- Input field for Description -->
+                  <div class="mb-3">
+                      <label for="description" class="form-label">Description</label>
+                      <textarea class="form-control" id="description" name="description" rows="3" required></textarea>
+                  </div>
+
+                  <!-- Input field for Status -->
+                  <div class="mb-3">
+                      <label for="status" class="form-label">Status</label>
+                      <select class="form-select" id="status" name="status" required>
+                          <option value="To Do">To Do</option>
+                          <option value="In Progress">In Progress</option>
+                          <option value="Done">Done</option>
+                      </select>
+                  </div>
+              </form>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" onclick="submitForm()">Add Task</button>
+          </div>
+      </div>
+  </div>
+</div>
+<script>
+  // JavaScript function to submit the form
+  function submitForm() {
+      // Get the form element
+      const form = document.getElementById('addTaskForm');
+
+      // Submit the form
+      form.submit();
+  }
+</script>
+
