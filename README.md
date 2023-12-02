@@ -1,4 +1,4 @@
-# dexa-take-home
+# Dexa-Take-Home
 Tugas dibuat menggunakan Node.js , EJS, mysql, dan Bootstrap.
 
 # Database
