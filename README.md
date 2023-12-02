@@ -14,7 +14,7 @@ task {
 
 # How to run
 1. Pertama-tama clone repository
-2. Buat file .env yang didalamnya membuat informasi sebagai berikut:
+2. Buat file .env yang didalamnya memuat informasi sebagai berikut:
 ```
 HOST=
 USER=
