@@ -1,5 +1,5 @@
 # dexa-take-home
-Tugas dibuat menggunakan Node.js , EJS, dan Bootstrap.
+Tugas dibuat menggunakan Node.js , EJS, mysql, dan Bootstrap.
 
 # Database
 Database terdiri dari sebuah table yang bernama task dengan schema seperti berikut :
@@ -14,7 +14,7 @@ task {
 
 # How to run
 1. Pertama-tama clone repository
-2. Buat file .env yang didalamnya memuat informasi sebagai berikut:
+2. Buat file .env yang didalamnya memuat informasi sebagai berikut (isi dengan database info yang kamu siapkan):
 ```
 HOST=
 USER=
